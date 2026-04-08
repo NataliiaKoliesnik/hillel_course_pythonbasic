@@ -1,5 +1,4 @@
 # homework 2
-import math
 
 # 1. the square of a number
 # option 1
@@ -22,12 +21,18 @@ result_3_1, result_3_2 = divmod(int(number_6), 60)
 print(result_3_1, 'hours', result_3_2, 'minutes', '\n')
 
 # 4. discount calculation
-number_7 = input('Enter the price: ')
-number_8 = input('Enter the discount: ')
-result_4 = int(number_7) - int(number_7) * int(number_8) / 100
+price = input('Enter the price: ')
+discount = input('Enter the discount: ')
+result_4 = int(price) - int(price) * int(discount) / 100
 print('Price after discount: ', result_4, '\n')
 
 # 5. the last digit of a number
 number_9 = input('Enter a number: ')
 result_5 = int(number_9) % 10
 print('the last digit: ', result_5, '\n')
+
+# 6. perimeter of a rectangle
+length = input('Enter the length: ')
+width = input('Enter the width: ')
+perimeter = 2 * (int(length) + int(width))
+print('The perimeter: ', perimeter, '\n')
