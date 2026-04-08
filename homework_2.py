@@ -36,3 +36,14 @@ length = input('Enter the length: ')
 width = input('Enter the width: ')
 perimeter = 2 * (int(length) + int(width))
 print('The perimeter: ', perimeter, '\n')
+
+# 7. printing a number in a column
+number_10 = input('Enter a four-digit number: ')
+result_7_1 = int(number_10) // 1000
+result_7_2 = (int(number_10) // 100) % 10
+result_7_3 = (int(number_10) // 10) % 10
+result_7_4 = int(number_10) % 10
+print(result_7_1)
+print(result_7_2)
+print(result_7_3)
+print(result_7_4)
