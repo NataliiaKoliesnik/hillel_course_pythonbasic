@@ -14,8 +14,11 @@ elif math_operation == '-':
 elif math_operation == '*':
     result_3 = Decimal(number_1) * Decimal(number_2)
     print('The result is ', result_3)
-elif math_operation == '/' and Decimal(number_2) != 0:
-    result_4 = Decimal(number_1) / Decimal(number_2)
-    print('The result is ', result_4)
+elif math_operation == '/':
+    if Decimal(number_2) != 0:
+        result_4 = Decimal(number_1) / Decimal(number_2)
+        print('The result is ', result_4)
+    else:
+        print('You can not divide by zero')
 else:
-    print('You can not divide by zero')
+    print('You entered an invalid mathematical operation')
