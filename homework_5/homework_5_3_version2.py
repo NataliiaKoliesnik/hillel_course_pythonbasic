@@ -1,6 +1,6 @@
 # hashtag
 my_str = input(f'Enter a string: ')
-from string import digits, ascii_letters, punctuation, ascii_uppercase
+from string import  punctuation
 
 # 3. each word starts with a capital letter
 my_str = my_str.title()
