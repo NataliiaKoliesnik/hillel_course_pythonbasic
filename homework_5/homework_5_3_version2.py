@@ -6,16 +6,16 @@ from string import  punctuation
 my_str = my_str.title()
 
 # 1. no symbols or spaces
-my_str_1 = str()
+alnum_str = str()
 for i in my_str:
-    if i not in punctuation and i not in ' ':
-        my_str_1 += i
+    if i not in punctuation and not i.isspace():
+        alnum_str += i
 
 # adding a hashtag
-my_str_1 = '#' + my_str_1
+alnum_str = f'#{alnum_str}'
 
 # 2. the length of the hashtag must not exceed 140 characters
-if len(my_str_1) > 140:
-    my_str_1 = my_str_1[:140]
+if len(alnum_str) > 140:
+    my_str_1 = alnum_str[:140]
 
-print(f'{my_str_1}')
+print(alnum_str)

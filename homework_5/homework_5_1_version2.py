@@ -21,4 +21,4 @@ else:
         if i in ascii_uppercase or i in punctuation_str:
             result = False
             break
-print(f'{result}')
+print(result)

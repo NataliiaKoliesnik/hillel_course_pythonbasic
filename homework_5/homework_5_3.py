@@ -21,10 +21,10 @@ while i < len(my_str):
 #print(f'{my_str_1}')
 
 # adding a hashtag
-my_str_1 = '#' + my_str_1
+my_str_1 = f'#{my_str_1}'
 #print(f'{my_str_1}')
 
 # 2. the length of the hashtag must not exceed 140 characters
 if len(my_str_1) > 140:
     my_str_1 = my_str_1[:140]
-print(f'{my_str_1}')
+print(my_str_1)

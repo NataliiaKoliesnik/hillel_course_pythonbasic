@@ -1,10 +1,10 @@
 # modified calculator: works as long as the user wants
 
 from decimal import Decimal
+number_1 = input(f'Enter a number 1: ')
+number_2 = input(f'Enter a number 2: ')
 calc_consent = 'y'
 while calc_consent == 'y' or calc_consent == 'yes':
-    number_1 = input(f'Enter a number 1: ')
-    number_2 = input(f'Enter a number 2: ')
     math_operation = input(f'Enter the mathematical operation that is performed on numbers (+,-,*,/): ')
     if math_operation == '+':
         result_1 = Decimal(number_1) + Decimal(number_2)
