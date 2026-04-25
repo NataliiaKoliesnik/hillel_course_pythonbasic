@@ -1,9 +1,9 @@
 #
+from string import digits, punctuation, ascii_uppercase
+from keyword import kwlist
 
 my_str = input(f'Enter a string: ')
 result = True
-from string import digits, ascii_letters, punctuation, ascii_uppercase
-from keyword import kwlist
 
 # the string cannot start with a digit
 if my_str[0] in digits:
