@@ -2,7 +2,7 @@
 
 from string import digits
 
-num = input(f'Enter a number : ')
+num = input(f'Enter a number: ')
 
 # checking whether a value is an integer, including negative numbers
 flag_num = 0
