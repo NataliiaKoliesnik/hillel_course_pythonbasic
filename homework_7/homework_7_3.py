@@ -7,8 +7,7 @@ def second_index(text, some_str):
   second_ind = text.find(some_str, first_ind + 1)
   if second_ind == -1: # if there is no second occurrence
       return None
-  else:
-      return second_ind
+  return second_ind
 
 # function testing
 assert second_index("sims", "s") == 3, 'Test1'
