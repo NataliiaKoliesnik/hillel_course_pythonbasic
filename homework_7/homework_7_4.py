@@ -8,8 +8,7 @@ def common_elements():
             set_div_3.add(i)
         if i % 5 == 0: # fill the second set with numbers divisible by 5
             set_div_5.add(i)
-    intersection_set = set_div_3.intersection(set_div_5) # find the intersection of the two sets
-    return intersection_set
+    return set_div_3.intersection(set_div_5) # find the intersection of the two sets
 
 # function testing
 assert common_elements() == {0, 75, 45, 15, 90, 60, 30}
