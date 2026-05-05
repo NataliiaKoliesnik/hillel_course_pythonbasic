@@ -1,9 +1,7 @@
 # a function that adds 1 to a number obtained from a given list and outputs it as a list
 
 def add_one(some_list):
-    my_str = ""
-    for i in some_list:
-        my_str += str(i) # converting a list to a string
+    my_str = "".join(map(str, some_list)) # converting a list to a string
     new_list = []
     # converting a string to a number, adding 1, then converting it back to a string and to a list
     for i in str(int(my_str) + 1):
