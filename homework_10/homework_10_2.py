@@ -1,6 +1,6 @@
 # function for finding the first word in a given string
 
-def first_word(text:str) -> str:
+def first_word(text: str) -> str:
     from string import ascii_letters, punctuation
     # we exclude the apostrophe because it is part of the word and add a space
     punctuation_str = punctuation.replace('\'', ' ')
