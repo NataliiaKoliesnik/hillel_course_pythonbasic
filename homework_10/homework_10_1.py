@@ -1,10 +1,13 @@
 # генераторна функція з використанням оператора yield, яка повертатиме
 # по одному члену числової послідовності, закон якої задається за допомогою функції користувача
 
+from typing import Callable
+from collections.abc import Iterator
+
 def my_pow(x):
     return x ** 2
 
-def some_gen(begin, end, func):
+def some_gen(begin: float | int, end: int, func: Callable[[int | float], int | float]) -> Iterator[int | float]:
     """
      begin: перший елемент послідовності
      end: кількість елементів у послідовності
